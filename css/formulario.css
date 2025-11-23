@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    background-color: #59abe3;
+}
+
+p::before {
+    content: attr(type);
+    display: block;
+    font-size: 20px;
+    color: rgb(40, 35, 59);
+    margin-top: 40px;
+}
+
+input {
+    width: 270px;
+    border: none;
+    border-bottom: 2px solid rgb(214, 66, 66);
+    background: none;
+    color: rgb(180, 236, 25);
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 3px solid rgb(255, 0, 0);
+    ;
+}
+
+.formulario {
+    background-color: #8fbad6;
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 10px 30px #30414d;
+    ;
+}
+
+button {
+    background-color: #61696e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    animation: move 2s 0s infinite;
+}
+
+.centrar-boton {
+    display: flex;
+    justify-content: center;
+}
+
+h2,
+header {
+    color: rgb(6, 121, 121);
+    border-bottom: 2px solid black;
+    font-size: 35px;
+}
+
+@keyframes move {
+    0% {
+        background-color: violet;
+    }
+
+    25% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    75% {
+        background-color: #30414d;
+    }
+
+    100% {
+        background-color: green;
+    }
+}
