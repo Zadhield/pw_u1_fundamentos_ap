@@ -1,0 +1,63 @@
+.container {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.formulario {
+    display: grid;
+    justify-content: right;
+}
+
+p:before {
+    display: grid;
+    content: attr(type);
+}
+
+.columnas {
+    display: flex;
+    gap: 20px;
+}
+
+#id_fecha {
+    width: 80px;
+}
+
+#id_cvv {
+    width: 60px;
+}
+
+img {
+    margin-top: 60px;
+    width: 300px;
+    height: 200px;
+}
+
+
+.msg_error {
+    background: #ffdddd;
+    border-left: 5px solid red;
+    padding: 10px;
+    color: #b30000;
+    display: none;
+    font-weight: bold;
+}
+
+.centrar-boton {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 175px;
+    margin-right: 15px;
+    color: white;
+    background-color: rgb(61, 61, 148);
+    border-radius: 4px;
+}
+
+.alinear-imagen {
+    display: flex;
+    justify-content: right;
+}

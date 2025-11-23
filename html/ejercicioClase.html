@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Details</title>
+    <link rel="stylesheet" href="../css/ejercicioClase.css">
+    <script src="../js/ejercicioClase.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="../img/Tarjeta.png" alt="Imagen no Disponible">
+
+        <div class="formulario">
+            <header>
+                <h2>Payment Details</h2>
+            </header>
+            <nav></nav>
+            <section>
+                <form action="#">
+                    <div id="id_msg_error" class="msg_error"></div>
+                    <p type="Cardholder Name"><input type="text" id="id_nombre" placeholder="Mrs Kate Smith" /><span
+                            class="error_asterisco" id="id_error_nombre"></span></p>
+                    <p type="Card Number"><input type="number" id="id_card" placeholder="0000 0000 000 0000" /><span
+                            class="error_asterisco" id="id_error_card"></span></p>
+                    <div class="columnas">
+                        <p type="Exp Date"><input type="text" id="id_fecha" placeholder="MM/YY" maxlength="5"
+                                pattern="(0[1-9]|1[0-2])\/\d{2}" required><span class="error_asterisco"
+                                id="id_error_fecha"></span></p>
+                        <p type="CVV"><input type="number" id="id_cvv" placeholder="0000" /><span
+                                class="error_asterisco" id="id_error_cvv"></span>
+                        </p>
+                    </div>
+                    <div class="centrar-boton">
+                        <button onclick="guardar()">Confirm</button>
+                    </div>
+                </form>
+
+            </section>
+        </div>
+        <footer></footer>
+    </div>
+</body>
+
+</html>
